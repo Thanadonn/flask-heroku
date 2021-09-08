@@ -29,5 +29,7 @@ def hello():
 def get_api():
     return jsonify(data)
 
-if __name__ == "__main__":
-    app.run(debug=False)
+@app.ruote('/hi')
+@app.ruote('/hello')
+def hi () :
+      return " สวัสดี|"
